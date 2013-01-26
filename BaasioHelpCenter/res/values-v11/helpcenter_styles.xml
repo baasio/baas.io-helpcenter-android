@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- File created by the Android Action Bar Style Generator
+
+     Copyright (C) 2012 readyState Software Ltd
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="Theme.helpcenter" parent="@style/Theme.Sherlock.Light.DarkActionBar">
+        <item name="actionBarItemBackground">@drawable/selectable_background_helpcenter</item>
+        <item name="popupMenuStyle">@style/helpcenter_PopupMenu</item>
+        <item name="dropDownListViewStyle">@style/helpcenter_DropDownListView</item>
+        <item name="actionBarTabStyle">@style/helpcenter_ActionBarTabStyle</item>
+        <!-- <item name="actionBarTabTextStyle">@style/helpcenter_ActionBarTabTextStyle</item> -->
+        <item name="actionDropDownStyle">@style/helpcenter_DropDownNav</item>
+        <item name="actionBarStyle">@style/helpcenter_solid_ActionBar</item>
+
+        <item name="android:actionBarItemBackground">@drawable/selectable_background_helpcenter</item>
+        <item name="android:popupMenuStyle">@style/helpcenter_PopupMenu</item>
+        <item name="android:dropDownListViewStyle">@style/helpcenter_DropDownListView</item>
+        <item name="android:actionBarTabStyle">@style/helpcenter_ActionBarTabStyle</item>
+        <!-- <item name="android:actionBarTabTextStyle">@style/helpcenter_ActionBarTabTextStyle</item> -->
+        <item name="android:actionDropDownStyle">@style/helpcenter_DropDownNav</item>
+        <item name="android:actionBarStyle">@style/helpcenter_solid_ActionBar</item>
+        <item name="android:panelBackground">@drawable/menu_hardkey_panel_helpcenter</item>
+        
+                <!-- Light.DarkActionBar specific -->
+        <item name="actionBarWidgetTheme">@style/Theme.helpcenter.widget</item>
+        <item name="android:actionBarWidgetTheme">@style/Theme.helpcenter.widget</item>
+        
+        <item name="spinnerDropDownItemStyle">@style/helpcenter_DropDownItem</item>
+        <item name="android:spinnerDropDownItemStyle">@style/helpcenter_DropDownItem</item>
+        <item name="spinnerItemStyle">@style/helpcenter_SpinnerItem</item>
+        <item name="android:spinnerItemStyle">@style/helpcenter_SpinnerItem</item>
+
+    </style>
+
+    <style name="helpcenter_solid_ActionBar" parent="@style/Widget.Sherlock.Light.ActionBar.Solid.Inverse">
+        <item name="background">@drawable/ab_solid_helpcenter</item>
+        <item name="backgroundStacked">@drawable/ab_stacked_solid_helpcenter</item>
+        <item name="backgroundSplit">@drawable/ab_bottom_solid_helpcenter</item>
+        <item name="progressBarStyle">@style/helpcenter_ProgressBar</item>
+
+        <item name="android:background">@drawable/ab_solid_helpcenter</item>
+        <item name="android:backgroundStacked">@drawable/ab_stacked_solid_helpcenter</item>
+        <item name="android:backgroundSplit">@drawable/ab_bottom_solid_helpcenter</item>
+        <item name="android:progressBarStyle">@style/helpcenter_ProgressBar</item>
+    </style>
+
+    <style name="helpcenter_transparent_ActionBar" parent="@style/Widget.Sherlock.ActionBar">
+        <item name="background">@drawable/ab_transparent_helpcenter</item>
+        <item name="progressBarStyle">@style/helpcenter_ProgressBar</item>
+        
+        <item name="android:background">@drawable/ab_transparent_helpcenter</item>
+        <item name="android:progressBarStyle">@style/helpcenter_ProgressBar</item>
+    </style>
+	
+    <style name="helpcenter_PopupMenu" parent="@style/Widget.Sherlock.ListPopupWindow">	
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_helpcenter</item>	
+    </style>
+	
+    <style name="helpcenter_DropDownListView" parent="@style/Widget.Sherlock.ListView.DropDown">
+        <item name="android:listSelector">@drawable/selectable_background_helpcenter</item>
+    </style>
+
+    <style name="helpcenter_ActionBarTabStyle" parent="@style/Widget.Sherlock.ActionBar.TabView">
+        <item name="background">@drawable/tab_indicator_ab_helpcenter</item>
+
+        <item name="android:background">@drawable/tab_indicator_ab_helpcenter</item>
+        <item name="android:paddingLeft">@dimen/tab_padding_width</item>
+        <item name="android:paddingRight">@dimen/tab_padding_width</item>
+    </style>
+	
+    <!-- <style name="helpcenter_ActionBarTabTextStyle" parent="@style/Widget.Sherlock.ActionBar.TabText">
+        <item name="android:textAppearance">@android:style/TextAppearance.Medium</item>
+        <item name="android:textColor">@android:color/tab_indicator_text</item>
+        <item name="android:textSize">@dimen/actionbar_tabtext_textsize</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:maxLines">2</item>
+    </style> -->
+    
+    <style name="helpcenter_DropDownNav" parent="@style/Widget.Sherlock.Spinner.DropDown.ActionBar">
+        <item name="background">@drawable/spinner_background_ab_helpcenter</item>
+
+        <item name="android:background">@drawable/spinner_background_ab_helpcenter</item>
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_helpcenter</item>
+        <item name="android:dropDownSelector">@drawable/selectable_background_helpcenter</item>
+    </style>
+    
+    <style name="helpcenter_ProgressBar" parent="@style/Widget.Sherlock.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_horizontal_helpcenter</item>
+    </style>
+    
+    <!-- this style is only referenced in a Light.DarkActionBar based theme -->
+    <style name="Theme.helpcenter.widget" parent="@style/Theme.Sherlock">
+        <item name="popupMenuStyle">@style/helpcenter_PopupMenu</item>
+        <item name="dropDownListViewStyle">@style/helpcenter_DropDownListView</item>
+        
+        <item name="android:popupMenuStyle">@style/helpcenter_PopupMenu</item>
+        <item name="android:dropDownListViewStyle">@style/helpcenter_DropDownListView</item>
+    </style>
+
+    <style name="helpcenter_AuthStyle" parent="Theme.helpcenter">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    
+    <style name="helpcenter_DropDownItem" parent="@style/Widget.Sherlock.Light.DropDownItem.Spinner">
+        <item name="android:textAppearance">?android:attr/textAppearanceInverse</item>
+    </style>
+    
+    <style name="helpcenter_SpinnerItem" parent="@style/Widget.Sherlock.TextView.SpinnerItem">
+        <item name="android:textAppearance">?android:attr/textAppearanceInverse</item>
+    </style>
+</resources>

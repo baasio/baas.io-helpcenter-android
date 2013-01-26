@@ -1,0 +1,59 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kth.baasio.helpcenter"
+    android:versionCode="1"
+    android:versionName="0.8.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.helpcenter" >
+
+        <!-- 고객센터 -->
+        <activity
+            android:name="com.kth.baasio.helpcenter.ui.HelpCenterActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_help"
+            android:theme="@style/Theme.helpcenter"
+            android:windowSoftInputMode="stateHidden|adjustUnspecified" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="MainActivity" />
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value="com.kth.baasio.helpcenter.ui.SearchableFaqActivity" />
+        </activity>
+        <activity
+            android:name="com.kth.baasio.helpcenter.ui.SearchableFaqActivity"
+            android:exported="false"
+            android:label="@string/title_activity_help"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.helpcenter" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.kth.baasio.helpcenter.ui.HelpCenterActivity" />
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/helpcenter_searchable" />
+        </activity>
+        <activity
+            android:name="com.kth.baasio.helpcenter.ui.FaqDetailActivity"
+            android:label="@string/title_activity_help"
+            android:theme="@style/Theme.helpcenter" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.kth.baasio.helpcenter.ui.HelpCenterActivity" />
+        </activity>
+    </application>
+
+</manifest>

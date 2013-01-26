@@ -1,0 +1,7 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_faq_search"
+        android:icon="@drawable/ic_action_search"
+        android:title="@string/menu_faq_search"
+        android:orderInCategory="1"
+        android:showAsAction="always" />
+</menu>

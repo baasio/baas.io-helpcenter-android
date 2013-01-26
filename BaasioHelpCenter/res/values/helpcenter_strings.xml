@@ -1,0 +1,57 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">HelpDesk</string>
+	
+    <!-- 고객센터 -->
+    <string name="title_help">도움말</string>
+    <string name="title_send_question">문의하기</string>
+    <string name="title_search_faqs">\'<xliff:g id="query">%s</xliff:g>\'의 검색결과</string>
+    
+    <!-- 고객센터 - 메인 -->
+    <string name="title_activity_help">고객센터</string>
+    <string name="title_activity_send_question">문의하기</string>
+    
+    <!-- 고객센터 - 도움말 -->
+    <string name="content_description_faq">도움말</string>
+    <string name="content_description_open">도움말 그룹 열기</string>
+    <string name="content_description_close">도움말 그룹 닫기</string>
+    
+    <!-- 고객센터 - 도움말 상세보기 -->
+    <string name="label_question">Q.</string>
+    <string name="label_answer">A.</string>
+    
+    <!-- 고객센터 - 도움말 검색 -->
+    <string name="label_search_faq">도움말 검색</string>
+    <string name="hint_search_faq">검색할 단어</string>
+    
+    <!-- 고객센터 - 문의하기 -->
+    <string name="error_empty_question">문의할 내용을 입력해주세요.</string>
+    
+    <string name="hint_send_question_email">답변받을 이메일주소를 입력하세요.</string>
+    <string name="hint_send_question_body">문의 내용을 입력하세요.</string>
+    
+    <string name="label_send_question_info">* 정확한 답변을 위해 모바일 정보(Device, OS)와 이메일 주소가 저장됩니다.</string>
+    <string name="label_question_post">문의하기</string>
+    
+    <string name="label_question_post_title">문의하기</string>
+    <string name="label_question_post_body">질문을 등록하시겠습니까?</string>
+    <string name="label_question_posting">등록중입니다.</string>
+    
+    <string name="label_question_post_fail_title">등록실패</string>
+    <string name="label_question_post_fail_body">질문 등록에 실패하였습니다.\n잠시후 다시 시도해 보세요.</string>
+    
+    <string name="msg_send_question_success">고객님의 문의가 접수되었습니다.\n\n\n접수 일시:\n<xliff:g id="time">%s</xliff:g>\n\n접수된 이메일:\n<xliff:g id="email">%s</xliff:g></string>
+    
+    <!-- 고객센터 - 메뉴 -->
+    <string name="menu_faq_search">Search in FAQ</string>
+    
+    <!-- 고객센터 - 기타 -->
+    <string name="error_invalid_email">이메일 주소를 확인해주세요.</string>
+    <string name="error_fail_get_faqs">도움말을 가져오는데 실패하였습니다.</string>
+    <string name="error_fail_search_faqs">도움말 검색하는데 실패하였습니다.</string>
+    <string name="error_fail_get_faqdetail">도움말 내용을 가져오는데 실패하였습니다.</string>
+    <string name="error_need_login">문의를 등록하시려면 로그인이 필요합니다.</string>
+    <string name="content_description_separator">구분선</string>
+    
+    <string name="empty_search_faq_list">검색된 도움말이 없습니다. 질문하실 내용이 있으시다면 문의하기를 해주세요.</string>
+</resources>
