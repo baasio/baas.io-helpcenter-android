@@ -18,4 +18,5 @@
 
 <resources>
     <color name="pressed_helpcenter">#CC33B5E5</color>
+    <color name="abs__holo_blue_light">#ff33b5e5</color>
 </resources>
