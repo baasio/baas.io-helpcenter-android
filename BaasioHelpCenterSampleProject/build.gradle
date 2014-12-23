@@ -18,6 +18,22 @@ android {
     compileSdkVersion 19
     buildToolsVersion "21.1.1"
 
+    defaultConfig {
+        multiDexEnabled = true
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+
+    packagingOptions {
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/ASL2.0'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+    }
+
     sourceSets {
         main {
             manifest.srcFile 'AndroidManifest.xml'
